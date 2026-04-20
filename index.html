@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeStream SL - Save a Life</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="life-header">
+            <div class="logo">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h1>LifeStream <span>SL</span></h1>
+            </div>
+            <div class="user-loc">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <small id="myLoc">Matara, SL</small>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="sos-requests">
+                <h3><i class="fa-solid fa-circle-exclamation"></i> Critical Requests</h3>
+                <div class="sos-card urgent">
+                    <div class="blood-type">B+</div>
+                    <div class="sos-info">
+                        <h4>General Hospital, Matara</h4>
+                        <p>Required: 2 Units • Urgent</p>
+                    </div>
+                    <button class="call-btn"><i class="fa-solid fa-phone"></i></button>
+                </div>
+            </section>
+
+            <section class="donor-finder">
+                <div class="finder-header">
+                    <h3>Nearby Donors</h3>
+                    <div class="toggle-group">
+                        <button class="tgl active" onclick="sortDonors('blood')">Blood</button>
+                        <button class="tgl" onclick="sortDonors('oxygen')">Oxygen</button>
+                    </div>
+                </div>
+                
+                <div id="donorList" class="donor-list">
+                    </div>
+            </section>
+        </main>
+
+        <nav class="bottom-nav">
+            <div class="nav-item active"><i class="fa-solid fa-house"></i></div>
+            <div class="nav-item"><i class="fa-solid fa-droplet"></i></div>
+            <div class="nav-item"><i class="fa-solid fa-circle-plus"></i></div>
+            <div class="nav-item"><i class="fa-solid fa-message"></i></div>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

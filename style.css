@@ -1,0 +1,42 @@
+:root {
+    --primary: #d90429;
+    --secondary: #ef233c;
+    --dark: #2b2d42;
+    --light: #edf2f4;
+}
+
+body { background: #f8f9fa; margin: 0; font-family: 'Inter', sans-serif; color: var(--dark); }
+
+.life-header {
+    background: var(--primary); color: white; padding: 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-radius: 0 0 25px 25px;
+}
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo h1 { font-size: 20px; margin: 0; }
+.logo span { font-weight: 300; opacity: 0.8; }
+
+.sos-card {
+    background: white; margin: 15px; padding: 15px; border-radius: 18px;
+    display: flex; align-items: center; gap: 15px;
+    border: 1px solid #ffccd5; box-shadow: 0 5px 15px rgba(217, 4, 41, 0.1);
+}
+.urgent { border-left: 6px solid var(--primary); }
+.blood-type {
+    background: var(--primary); color: white; width: 50px; height: 50px;
+    border-radius: 12px; display: flex; align-items: center; justify-content: center;
+    font-weight: bold; font-size: 18px;
+}
+
+.donor-list { padding: 0 15px 100px; }
+.donor-item {
+    background: white; padding: 15px; border-radius: 15px;
+    margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.dist-tag { background: #e9ecef; padding: 4px 10px; border-radius: 8px; font-size: 12px; font-weight: 600; }
+
+.tgl { border: none; background: #e9ecef; padding: 8px 15px; border-radius: 10px; cursor: pointer; }
+.tgl.active { background: var(--dark); color: white; }
+
+.call-btn { background: #2ecc71; border: none; color: white; padding: 10px; border-radius: 50%; width: 40px; height: 40px; }
